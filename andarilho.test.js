@@ -1,5 +1,12 @@
 $(function(){
 module("Andarilho");
+	test("recebimento dos argumentos pelo construtor", function(){
+		mapa = new Mapa(matriz);
+		coordenada_atual = [0,0];
+		andarilho = new Andarilho(mapa,coordenada_atual);
+		same(andarilho.mapa,mapa);
+		same(andarilho.localizadao,coordenada_atual);
+	});
 	test("passo na diagonal começando na primeira posição", function() {
 		matriz = [[2, 4],
 				 [4, 1]];
