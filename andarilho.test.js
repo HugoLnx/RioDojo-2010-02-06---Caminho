@@ -78,4 +78,16 @@ module("Andarilho");
 
 		same(andarilho.localizacao, [0,1]);
 	});
+	
+	test("passo na diagonal quando valor da diagonal igual ao da direita", function() {
+		matriz = [[3, 2],
+				  [4, 2]];
+
+		mapa = new Mapa(matriz);
+		coordenada_atual = [0,0];
+		andarilho = new Andarilho(mapa,coordenada_atual);
+		andarilho.da_um_passo();
+
+		same(andarilho.localizacao, [0,1]);
+	});
 });
