@@ -4,8 +4,14 @@ O problema a ser resolvido era, dada uma matriz de entrada, seria
 retornada um caminho que percorreria os menores numeros,por exemplo:
 
 _Entrada:_
-| _0_  3 |
-| _1_  2 |
+<table>
+  <tr>
+    <td>_0_</td><td>3</td>
+  </tr>
+  <tr>
+    <td>_1_</td><td>2</td>
+  </tr>
+</table>
 
 _Saida:_
 [0,1]
@@ -13,9 +19,17 @@ _Saida:_
 No caso de empate, a prioridade seria a do mais inferior, exemplo:
 
 _Entrada:_
-| _0_ 2 4 |
-| 3 _2_ 3 |
-| 4 _1_ 2 |
+<table>
+  <tr>
+    <td>_0_</td><td>2</td><td>4</td>
+  </tr>
+  <tr>
+    <td>4</td><td>_2_</td><td>3</td>
+  </tr>
+  <tr>
+    <td>4</td><td>_1_</td><td>2</td>
+  </tr>
+</table>
 
 _Saida:_
 [0,2,1]
@@ -24,9 +38,17 @@ No caso de um segundo empate, a prioridade seria a da mais
 a direita, por exemplo...
 
 _Entrada:_
-| _0_ 2 5 |
-| 2 _2_ 4 |
-| 3 3 _1_ |
+<table>
+  <tr>
+    <td>_0_</td><td>2</td><td>5</td>
+  </tr>
+  <tr>
+    <td>2</td><td>_2_</td><td>4</td>
+  </tr>
+  <tr>
+    <td>3</td><td>3</td><td>_1_</td>
+  </tr>
+</table>
 
 _Saida:_
 [0,2,1]
