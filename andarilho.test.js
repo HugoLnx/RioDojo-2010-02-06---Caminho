@@ -66,4 +66,16 @@ module("Andarilho");
 
 		same(andarilho.localizacao, [0,1]);
 	});
+	
+	test("passo pra baixo quando valor de baixo igual ao da direita", function() {
+		matriz = [[3, 2],
+				  [2, 4]];
+
+		mapa = new Mapa(matriz);
+		coordenada_atual = [0,0];
+		andarilho = new Andarilho(mapa,coordenada_atual);
+		andarilho.da_um_passo();
+
+		same(andarilho.localizacao, [0,1]);
+	});
 });
